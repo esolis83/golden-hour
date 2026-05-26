@@ -8,11 +8,15 @@
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  background: #060301;     /* silhouette black from the hero photo */
+  background: #060301; /* silhouette black from the hero photo */
 }
 
-.tall  { aspect-ratio: 2 / 3; }
-.short { aspect-ratio: 3 / 2; }
+.tall {
+  aspect-ratio: 2 / 3;
+}
+.short {
+  aspect-ratio: 3 / 2;
+}
 
 /* ── Photo ───────────────────────────────────────────────────────────────────── */
 
@@ -43,8 +47,8 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(8, 3, 0, 0.90) 0%,
-    rgba(8, 3, 0, 0.30) 42%,
+    rgba(8, 3, 0, 0.9) 0%,
+    rgba(8, 3, 0, 0.3) 42%,
     transparent 68%
   );
   pointer-events: none;
@@ -56,9 +60,9 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(210, 72, 8, 0.94) 0%,
-    rgba(228, 88, 14, 0.72) 40%,
-    rgba(200, 65, 8, 0.40) 75%,
+    rgba(210, 72, 8, 0.75) 0%,
+    rgba(228, 88, 14, 0.52) 30%,
+    rgba(200, 65, 8, 0.4) 45%,
     rgba(170, 48, 4, 0.14) 100%
   );
   pointer-events: none;
@@ -87,21 +91,21 @@
 
 /* Sandy-warm location label */
 .location {
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #C8A882;          /* warm sand */
+  color: #c8a882; /* warm sand */
 }
 
 .date {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 10px;
   letter-spacing: 0.06em;
-  color: rgba(200, 168, 130, 0.5);  /* muted sandy amber */
+  color: rgba(200, 168, 130, 0.5); /* muted sandy amber */
 }
 
 /* ── Hover: big script quote fills the card ──────────────────────────────────── */
@@ -116,12 +120,12 @@
 }
 
 .quote {
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+  /* font-weight: 100; */
   font-size: clamp(20px, 3.8vw, 40px);
   line-height: 1.25;
   text-align: center;
-  color: #FFF5E4;           /* warm cream */
+  color: #fff5e4; /* warm cream */
   text-shadow:
     0 2px 24px rgba(14, 6, 0, 0.6),
     0 1px 4px rgba(0, 0, 0, 0.4);
@@ -130,7 +134,7 @@
 }
 
 .word {
-  display: inline;          /* inline so line-breaks happen naturally */
+  display: inline; /* inline so line-breaks happen naturally */
 }
 
 /* ── Hover: music row ────────────────────────────────────────────────────────── */
@@ -168,10 +172,18 @@
 }
 
 @keyframes eq {
-  0%   { height: 4px; }
-  35%  { height: 13px; }
-  65%  { height: 5px; }
-  100% { height: 14px; }
+  0% {
+    height: 4px;
+  }
+  35% {
+    height: 13px;
+  }
+  65% {
+    height: 5px;
+  }
+  100% {
+    height: 14px;
+  }
 }
 
 /* Song pill */
@@ -183,18 +195,18 @@
 }
 
 .songTitle {
-  font-family: "Syne", sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #E8C99A;           /* warm cream-gold */
+  color: #e8c99a; /* warm cream-gold */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .artistName {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 10px;
