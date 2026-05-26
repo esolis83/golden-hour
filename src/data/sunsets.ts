@@ -18,7 +18,7 @@ export const SUNSETS: SunsetData[] = [
     date: "Aug 2025",
     quote: "Every sunset is a reminder that endings can be breathtaking.",
     songTitle: "I'm Fine",
-    artist: "Ciara Blue",
+    artist: "Ciara Blues",
     accent: "#E8621A",
     tall: true,
     spotifyTrackId: "2kcFvqzhHgbMqMwGF3zCqS",
