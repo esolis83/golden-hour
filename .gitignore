@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.env.local
+
+# Spotify PHP proxy — contains Client Secret, never commit
+public/api/spotify-token.php
+
+# macOS
+.DS_Store
+**/.DS_Store

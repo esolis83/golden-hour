@@ -1,0 +1,35 @@
+/* ── Outer wrapper ───────────────────────────────────────────────────────────── */
+
+.section {
+  background: #060301;   /* silhouette black — matches hero + body */
+  padding: 10px;
+}
+
+/* ── CSS-columns masonry ─────────────────────────────────────────────────────── */
+
+.mosaic {
+  /* 4 columns ≥ 1400 px */
+  columns: 4;
+  column-gap: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* 3 columns between 768 px and 1399 px */
+@media (max-width: 1399px) {
+  .mosaic {
+    columns: 3;
+  }
+}
+
+/* 2 columns on mobile */
+@media (max-width: 767px) {
+  .mosaic {
+    columns: 2;
+    column-gap: 6px;
+  }
+
+  .section {
+    padding: 6px;
+  }
+}

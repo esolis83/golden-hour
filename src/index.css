@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Silhouette black — sampled from the darkest ground in the hero photo */
+  background: #060301;
+  color: #F5EFE6;
+  font-family: "Syne", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
